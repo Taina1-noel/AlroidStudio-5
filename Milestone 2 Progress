@@ -1,0 +1,16 @@
+
+## 🚧 Milestone 2 Progress
+
+### Features Implemented
+- [x] Installed project structure in Android Studio
+- [x] Added Home Screen layout
+- [x] Added Timer Screen layout
+- [x] Implemented API call to ZenQuotes
+- [x] Set up RecyclerView adapter and empty list
+- [ ] Flashcards creation screen (in progress)
+- [ ] Music screen integration (planned)
+
+### Screenshots
+![Home Screen](./screenshots/home.png)
+![Timer Screen](./screenshots/timer.png)
+![API Response](./screenshots/api.png)

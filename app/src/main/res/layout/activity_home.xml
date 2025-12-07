@@ -1,21 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:background="#F3F6FF">
 
-    <TextView
-        android:id="@+id/homeTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to StudySync!"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#2563EB"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Gradient Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/header_gradient"
+            android:padding="16dp"
+            android:elevation="6dp"
+            android:layout_marginBottom="24dp"
+            android:clipToPadding="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="StudySync"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stay focused. Stay consistent."
+                android:textSize="14sp"
+                android:textColor="#E8ECFF"
+                android:gravity="center"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+
+        <!-- Menu Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Reusable Button Style -->
+            <Button
+                android:id="@+id/btnTimer"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/rounded_btn"
+                android:text="Study Timer"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:drawableLeft="@android:drawable/ic_media_play"
+                android:drawablePadding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnMusic"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/rounded_btn"
+                android:text="Study Music"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:drawableLeft="@android:drawable/ic_media_ff"
+                android:drawablePadding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnFlashcards"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/rounded_btn"
+                android:text="Flashcards"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:drawableLeft="@android:drawable/ic_menu_gallery"
+                android:drawablePadding="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/rounded_btn"
+                android:text="My Profile"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                android:drawablePadding="12dp"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+

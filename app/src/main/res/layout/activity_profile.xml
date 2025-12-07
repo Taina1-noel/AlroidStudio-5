@@ -1,21 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:background="#F2F5F8">
 
-    <TextView
-        android:id="@+id/profileTitle"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="My Profile"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#2563EB"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_bg"
+            android:padding="5dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="Profile picture" />
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taina Noel"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2536BE"
+            android:layout_marginTop="15dp"/>
+
+        <!-- Major / Info -->
+        <TextView
+            android:id="@+id/txtMajor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Information Technology Major • FAMU"
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:layout_marginTop="5dp"/>
+
+        <!-- Motivation Quote (from Kotlin random list) -->
+        <TextView
+            android:id="@+id/txtMotivation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading..."
+            android:textSize="16sp"
+            android:textColor="#444"
+            android:gravity="center"
+            android:background="#FFFFFF"
+            android:padding="15dp"
+            android:elevation="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Study Progress Cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Hours Studied -->
+            <TextView
+                android:id="@+id/txtHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hours Studied: 12"
+                android:textSize="18sp"
+                android:textColor="#2536BE"
+                android:background="#FFFFFF"
+                android:padding="15dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="4dp"/>
+
+            <!-- Current Streak -->
+            <TextView
+                android:id="@+id/txtStreak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Streak: 4 days"
+                android:textSize="18sp"
+                android:textColor="#2536BE"
+                android:background="#FFFFFF"
+                android:padding="15dp"
+                android:layout_marginBottom="15dp"
+                android:elevation="4dp"/>
+
+            <!-- Badges Earned -->
+            <TextView
+                android:id="@+id/txtBadges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Badges Earned: ⭐ Focus Master"
+                android:textSize="18sp"
+                android:textColor="#2536BE"
+                android:background="#FFFFFF"
+                android:padding="15dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="4dp"/>
+        </LinearLayout>
+
+        <!-- Edit Button -->
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textSize="18sp"
+            android:backgroundTint="#2536EB"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

@@ -1,21 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F2F8FF">
 
+    <!-- PAGE TITLE -->
     <TextView
-        android:id="@+id/musicTitle"
+        android:id="@+id/txtMusicTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Study Music"
-        android:textSize="28sp"
+        android:textSize="30sp"
+        android:textColor="#2536EB"
         android:textStyle="bold"
-        android:textColor="#2563EB"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- TRACK IMAGE -->
+    <ImageView
+        android:id="@+id/imgTrack"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/circle_bg"
+        android:padding="10dp"/>
+
+    <!-- TRACK NAME -->
+    <TextView
+        android:id="@+id/txtTrackName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading track..."
+        android:textSize="20sp"
+        android:textColor="#444"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"/>
+
+    <!-- SOUND BAR ANIMATION -->
+    <LinearLayout
+        android:id="@+id/soundBars"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="40dp"
+            android:background="#2536EB"
+            android:layout_margin="4dp"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="60dp"
+            android:background="#2536EB"
+            android:layout_margin="4dp"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="30dp"
+            android:background="#2536EB"
+            android:layout_margin="4dp"/>
+
+    </LinearLayout>
+
+    <!-- MUSIC CONTROLS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⟨⟨"
+            android:textSize="20sp"
+            android:background="#2636EB"
+            android:textColor="#FFF"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btnPlayPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play"
+            android:textSize="20sp"
+            android:background="#16A34A"
+            android:textColor="#FFF"
+            android:padding="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⟩⟩"
+            android:textSize="20sp"
+            android:background="#2636EB"
+            android:textColor="#FFF"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <!-- VOLUME SLIDER -->
+    <SeekBar
+        android:id="@+id/seekVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

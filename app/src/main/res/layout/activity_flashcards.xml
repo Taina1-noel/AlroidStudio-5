@@ -1,21 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#F2F8FF">
 
+    <!-- Flashcard box -->
     <TextView
-        android:id="@+id/flashTitle"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtFlashcard"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Flashcards"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:textColor="#2563EB"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:padding="30dp"
+        android:text="Flashcard question will appear here"
+        android:textSize="22sp"
+        android:textColor="#26356B"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Show answer -->
+    <Button
+        android:id="@+id/btnToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Answer"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#26A34A"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Next card -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Card"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4163A4" />
+</LinearLayout>
+

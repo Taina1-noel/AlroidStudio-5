@@ -16,9 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Example buttons → navigate to activities
-        binding.btnHome.setOnClickListener {
-            startActivity(Intent(this, HomeActivity::class.java))
-        }
+
         binding.btnTimer.setOnClickListener {
             startActivity(Intent(this, TimerActivity::class.java))
         }

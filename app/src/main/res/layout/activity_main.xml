@@ -1,119 +1,110 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F3F6FF">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:padding="20dp">
+        android:layout_height="match_parent">
 
-        <!-- Gradient Header -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:background="@drawable/header_gradient"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="20dp"
-            android:elevation="6dp"
-            android:layout_marginBottom="24dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="StudySync"
-                android:textColor="#FFFFFF"
-                android:textSize="32sp"
-                android:textStyle="bold"
-                android:gravity="center" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Stay focused. Stay consistent."
-                android:textColor="#E8ECFF"
-                android:textSize="14sp"
-                android:layout_marginTop="6dp"
-                android:gravity="center" />
-        </LinearLayout>
-
-        <!-- Card Container for Buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp"
-            android:elevation="4dp"
-            android:layout_margin="10dp"
-            android:gravity="center"
-            android:paddingTop="30dp"
-            android:paddingBottom="30dp"
-            android:background="@drawable/rounded_white_card">
+            android:gravity="center_horizontal"
+            android:padding="20dp">
 
-            <!-- Buttons With Icons -->
-            <Button
-                android:id="@+id/btnHome"
+            <!-- Top Gradient Header -->
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Home Screen"
-                android:textAllCaps="false"
-                android:textSize="18sp"
-                android:background="@drawable/rounded_btn"
-                android:layout_marginBottom="16dp"
-                android:drawableLeft="@android:drawable/ic_menu_view"
-                android:drawablePadding="14dp" />
+                android:layout_height="160dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/header_gradient"
+                android:padding="16dp"
+                android:layout_marginBottom="24dp"
+                android:elevation="6dp">
 
-            <Button
-                android:id="@+id/btnTimer"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Study Timer"
-                android:textAllCaps="false"
-                android:textSize="18sp"
-                android:background="@drawable/rounded_btn"
-                android:layout_marginBottom="16dp"
-                android:drawableLeft="@android:drawable/ic_media_play"
-                android:drawablePadding="14dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="StudySync"
+                    android:textColor="#FFFFFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
 
-            <Button
-                android:id="@+id/btnFlashcards"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Flashcards"
-                android:textAllCaps="false"
-                android:textSize="18sp"
-                android:background="@drawable/rounded_btn"
-                android:layout_marginBottom="16dp"
-                android:drawableLeft="@android:drawable/ic_menu_gallery"
-                android:drawablePadding="14dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stay focused. Stay consistent."
+                    android:textColor="#E8ECFF"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp" />
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/btnMusic"
+            <!-- Menu Buttons -->
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="Study Music"
-                android:textAllCaps="false"
-                android:textSize="18sp"
-                android:background="@drawable/rounded_btn"
-                android:layout_marginBottom="16dp"
-                android:drawableLeft="@android:drawable/ic_media_ff"
-                android:drawablePadding="14dp" />
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="20dp"
+                android:background="@drawable/card_bg"
+                android:elevation="4dp">
 
-            <Button
-                android:id="@+id/btnProfile"
-                android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:text="My Profile"
-                android:textAllCaps="false"
-                android:textSize="18sp"
-                android:background="@drawable/rounded_btn"
-                android:drawableLeft="@android:drawable/ic_menu_myplaces"
-                android:drawablePadding="14dp" />
+                <Button
+                    android:id="@+id/btnTimer"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/green_btn"
+                    android:text="Study Timer"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:drawableLeft="@drawable/ic_timer"
+                    android:drawablePadding="14dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btnMusic"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/green_btn"
+                    android:text="Study Music"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:drawableLeft="@drawable/ic_music"
+                    android:drawablePadding="14dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btnFlashcards"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/green_btn"
+                    android:text="Flashcards"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:drawableLeft="@drawable/ic_home"
+                    android:drawablePadding="14dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/btnProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/green_btn"
+                    android:text="My Profile"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:drawableLeft="@drawable/ic_profile"
+                    android:drawablePadding="14dp"/>
+            </LinearLayout>
 
         </LinearLayout>
+    </ScrollView>
 
-    </LinearLayout>
-</ScrollView>
+</RelativeLayout>
+

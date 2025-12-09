@@ -39,7 +39,8 @@ This repository contains our submission for **Milestone 1: Product Spec and Wire
 **Milestone:** 1 – Product Spec and Wireframes  
 **Submission Date:** November 13, 2025  
 
----
+---![Kapture 2025-12-09 at 11 56 11-2](https://github.com/user-attachments/assets/9e0aa4e0-9e52-48a2-b69a-aa1a1eba45db)
+
 
 ## ✅ Submission Checklist
 - [x] README uses provided template  
